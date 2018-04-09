@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.bash_operator import BashOperator
 
-venv = 'sandbox'
+venv = 'production'
 github_dir = '~/Documents/github/'
 root_dir = '{github_dir}adagio_backtest/adagio_backtest/'.format(github_dir=github_dir)
 default_args = {
